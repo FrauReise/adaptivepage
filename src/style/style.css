@@ -1,0 +1,123 @@
+@media screen and (min-width: 600px) {
+
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        font-family: 'Poppins', Arial, sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        grid-template-areas: "header header header header"
+            "main main sidebar sidebar"
+            "main main sidebar sidebar"
+            "main main sidebar sidebar";
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .header {
+        height: 30vh;
+    }
+
+    .main {
+        height: 30vh;
+    }
+
+    .sidebar {
+        height: 30vh;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.header {
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: rgb(213, 203, 231);
+    padding: 3%;
+}
+
+.nav_list {
+    letter-spacing: 8px;
+    font-size: 1em;
+    list-style-type: none;
+    text-align: center;
+    margin: 5%;
+}
+
+.nav_title {
+    font-size: 4em;
+    color: white;
+}
+
+
+.about_title,
+.portfolio_title,
+.aside_title {
+    color: rgb(94, 46, 161);
+    font-size: 2em;
+    margin: 5%;
+}
+
+a:hover {
+    color: rgb(164, 101, 247);
+}
+
+
+.about_text {
+    color: rgb(94, 46, 161);
+    font-size: 1em;
+  }
+
+.main {
+    grid-area: 2 / 1 / 5 / 3;
+    background-color: rgb(238, 234, 234);
+    padding: 3%;
+}
+
+.sidebar {
+    grid-area: 2 / 3 / 5 / 5;
+    grid-area: sidebar;
+    background-color: rgb(161, 124, 198);
+    padding: 5%;
+}
+
+.footer {
+    grid-area: 5 / 1 / 6 / 2;
+    grid-area: footer;
+    background-color:  rgb(200, 185, 228);
+    padding: 10%;
+}
+
+.footer_text {
+    font-size: 2em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    display: grid;
+    justify-content: center;
+    margin: 3%;
+}
+
+.button_title {
+    font-size: 2em;
+    border: 0;
+    background-color: rgb(153, 123, 251);
+    color: rgb(255, 255, 255);
+}
