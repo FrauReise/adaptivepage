@@ -25,6 +25,9 @@
     color: white;
 }
 
+.menu_image {
+    max-width: fit-content;
+}
 
 .about_title,
 .portfolio_title,
